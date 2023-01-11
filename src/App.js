@@ -23,7 +23,7 @@ export default function App() {
             </a>
             coded with ❤ by Natsuki Shuko and on{" "}
             <a
-              href="https://app.netlify.com/sites/magical-kringle-3a7435/overview"
+              href="https://magical-kringle-3a7435.netlify.app/"
               rel="noreferrer"
               target="_blank"
             >
