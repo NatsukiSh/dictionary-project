@@ -4,8 +4,8 @@ import "./Dictionary.css";
 import Results from "./Results";
 
 export default function Dictionary() {
-  const [keyword, setKeyword] = useState(" ");
-  const [results, setResults] = useState(null);
+  let [keyword, setKeyword] = useState(" ");
+  let [results, setResults] = useState(null);
 
   function handleResponse(response) {
     console.log(response.data[0]);
