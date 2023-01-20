@@ -3,37 +3,29 @@ import "./Phonetic.css";
 import AudioPlayer from "react-modern-audio-player";
 
 export default function Phonetic(props) {
-  <div className="Phonetic">
-    return ( function App(){props.phonetic.audio}
+  const playList = [
     {
+      name: `Audio`,
+      writer: ``,
+      img: ``,
+      src: props.phonetic.audio,
+      id: 1,
+    },
+  ];
+  return (
+    <div className="Phonetic">
       <div>
         <AudioPlayer
-          src={props.phonetic.audio}
+          playList={playList}
+          className="grid"
           audioInitialState={{
-            muted: true,
+            muted: false,
             volume: 0.2,
             curPlayId: 1,
           }}
-          placement={{
-            interface: {
-              templateArea: {
-                trackTimeDuration: "row1-5",
-                progress: "row1-4",
-                playButton: "row1-6",
-                repeatType: "row1-7",
-                volume: "row1-8",
-              },
-            },
-            player: "bottom-left",
-          }}
-          activeUI={{
-            all: true,
-            progress: "waveform",
-          }}
         />
       </div>
-    }
-    );
-    <span className="text">{props.phonetic.text}</span>
-  </div>;
+      <span className="text">{props.phonetic.text}</span>
+    </div>
+  );
 }
